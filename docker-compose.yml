@@ -1,0 +1,9 @@
+services:
+  python-chatgpt:
+    container_name: python-chatgpt
+    image: python-chatgpt:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/usr/src/app
